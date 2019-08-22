@@ -3,6 +3,7 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin
 
 from profiles_api.models import UserProfile
+from profiles_api.models import ProfileFeedItem
 
 
 
@@ -14,3 +15,4 @@ class CustomUserAdmin(UserAdmin):
 
 
 admin.site.register(UserProfile)
+admin.site.register(ProfileFeedItem)
